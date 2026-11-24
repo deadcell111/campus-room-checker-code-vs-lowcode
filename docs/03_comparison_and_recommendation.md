@@ -10,7 +10,7 @@
 | Test time | Suites run in about 1-2 s each | 56 s for 6 manual runs + 1 visual check, one by one |
 | Customization | Full: layout, CSS, CSP header, accessibility attributes, responsive grid | Limited to widgets and their style panel; custom code only inside JS Objects and bindings |
 | Security controls | Own input validation, textContent output, a strict Content-Security-Policy, no dependencies | Platform handles auth and hosting; app rendered by Appsmith widgets; no CSP or header control found; sharing/permissions set in UI |
-| Versioning / portability | Plain files in git, diffable, reviewable | Edits are autosaved in the platform; "Connect Git" exists in the editor but I did not test it or whether the free plan allows it; JSON export not tried |
+| Versioning / portability | Plain files in git, diffable, reviewable | Edits are autosaved in the platform; "Connect Git" exists in the editor but I did not test it or whether the free plan allows it; JSON export worked from the app menu (44 KB, one file; a diff of it is hard to read) |
 | Ongoing cost | None; free static hosting possible; we maintain the code | Free plan used, no purchase; update duty is Appsmith's for the platform, ours for the app |
 
 Measured vs impression: the numbers above come from evidence/timing_log.txt. The code-based times are agent tool time on a rule set I already had, so they do not predict a new developer's effort. The low-code times include my failed drags. Statements about customization and cost are impressions, not measurements.
