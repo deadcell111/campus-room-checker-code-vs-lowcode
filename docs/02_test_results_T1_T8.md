@@ -13,5 +13,5 @@
 
 Score: code-based 8/8, low-code 8/8.
 Extra tests, code-based only: 9 boundary/unit tests, 12 UI checks (responsive, XSS probe, no console/CSP errors), 33 baseline tests.
-Low-code limits: the 8 cases were run in the Appsmith editor canvas (not the published view), by hand, one at a time. No extra boundary tests and no narrow-screen check were run.
+Low-code: run by hand in the editor canvas, then T1-T7 repeated in the published view (all matched). Run one at a time. No extra boundary tests and no narrow-screen check were run.
 Evidence: evidence/*.txt, shots/code_*.png, shots/lowcode_*.jpg.

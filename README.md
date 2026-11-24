@@ -15,4 +15,4 @@ Talgat Kozhakhmetov, 24B031852. Same user story, same AC1-AC6, same tests T1-T8 
 - Repo: https://github.com/deadcell111/campus-room-checker-code-vs-lowcode
 
 Status: both builds pass 8/8.
-Labels: T1-T8 on Appsmith were run in the editor canvas; after publishing, only T2 was re-run in the published view (shots/lowcode_published_view_T2.jpg). Not done: Appsmith JSON export, Git sync, logged-out check of the public link.
+Labels: T1-T8 on Appsmith were first run in the editor canvas (shots/lowcode_T*.jpg), then T1-T7 were re-run in the published view (shots/lowcode_published_*.jpg); all matched. T8 = bookings table unchanged in every published screenshot. Not done: Appsmith JSON export, Git sync, logged-out check of the public link.
