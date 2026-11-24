@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; base-uri 'none'; form-action 'none'">
+<title>Room Availability Checker (code-based)</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<main>
+  <h1>Smart Campus Room Availability Checker</h1>
+  <p class="meta">Code-based version. Check only: this page never creates or changes a booking. All data is fictional.</p>
+  <section class="card" aria-labelledby="roomLabel">
+    <h2><span id="roomLabel"></span> <span id="status" class="badge open">Open</span></h2>
+    <p class="meta">Current time: <strong id="nowText"></strong></p>
+    <h3>Existing bookings</h3>
+    <ul id="bookings"></ul>
+  </section>
+  <form class="card" id="form" novalidate aria-labelledby="chk">
+    <h2 id="chk">Request (today)</h2>
+    <div class="fields">
+      <div><label for="start">Start time (HH:MM)</label><input id="start" type="text" inputmode="numeric" placeholder="11:30" autocomplete="off"></div>
+      <div><label for="duration">Duration (minutes, 1-120)</label><input id="duration" type="text" inputmode="numeric" placeholder="60" autocomplete="off"></div>
+    </div>
+    <label class="toggle"><input type="checkbox" id="blocked">Room is blocked (demo flag)</label>
+    <button type="submit">Check availability</button>
+    <div id="result" role="status" aria-live="polite"></div>
+  </form>
+</main>
+<script src="js/data.js"></script>
+<script src="js/validation.js"></script>
+<script src="js/availability.js"></script>
+<script src="js/messages.js"></script>
+<script src="js/checker.js"></script>
+<script src="js/ui.js"></script>
+</body>
+</html>

@@ -1,0 +1,89 @@
+{
+ "fixed": {
+  "now": "09:00",
+  "room": "B-204",
+  "bookings": [
+   {
+    "title": "Algorithms seminar",
+    "start": "10:00",
+    "end": "11:00"
+   },
+   {
+    "title": "Club meeting",
+    "start": "13:00",
+    "end": "14:30"
+   }
+  ],
+  "maxDuration": 120
+ },
+ "cases": [
+  {
+   "id": "T1",
+   "name": "valid free interval",
+   "start": "11:30",
+   "duration": "60",
+   "blocked": false,
+   "available": true,
+   "code": "ok"
+  },
+  {
+   "id": "T2",
+   "name": "overlap with an existing booking",
+   "start": "10:30",
+   "duration": "60",
+   "blocked": false,
+   "available": false,
+   "code": "overlap"
+  },
+  {
+   "id": "T3",
+   "name": "blocked room",
+   "start": "11:30",
+   "duration": "60",
+   "blocked": true,
+   "available": false,
+   "code": "blocked"
+  },
+  {
+   "id": "T4",
+   "name": "duration = 0",
+   "start": "11:30",
+   "duration": "0",
+   "blocked": false,
+   "available": false,
+   "code": "invalid_duration"
+  },
+  {
+   "id": "T5",
+   "name": "duration = 121",
+   "start": "11:30",
+   "duration": "121",
+   "blocked": false,
+   "available": false,
+   "code": "invalid_duration"
+  },
+  {
+   "id": "T6",
+   "name": "past start time",
+   "start": "08:00",
+   "duration": "60",
+   "blocked": false,
+   "available": false,
+   "code": "invalid_past"
+  },
+  {
+   "id": "T7",
+   "name": "adjacent non-overlapping interval",
+   "start": "11:00",
+   "duration": "60",
+   "blocked": false,
+   "available": true,
+   "code": "ok"
+  },
+  {
+   "id": "T8",
+   "name": "booking data unchanged after checks",
+   "type": "bookings_unchanged"
+  }
+ ]
+}

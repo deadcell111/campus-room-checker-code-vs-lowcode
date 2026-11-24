@@ -1,0 +1,13 @@
+PASS T1 valid free interval -> Available [ok] Available: Room B-204 is free from 11:30 to 12:30.
+PASS T2 overlap with an existing booking -> Unavailable [overlap] Unavailable: overlaps "Algorithms seminar" (10:00-11:00).
+PASS T3 blocked room -> Unavailable [blocked] Unavailable: the room is blocked.
+PASS T4 duration = 0 -> Check your input [invalid_duration] Input error: duration must be a whole number of minutes, more than 0 and at most 120.
+PASS T5 duration = 121 -> Check your input [invalid_duration] Input error: duration must be a whole number of minutes, more than 0 and at most 120.
+PASS T6 past start time -> Check your input [invalid_past] Input error: the start time must be later than the current time (09:00).
+PASS T7 adjacent non-overlapping interval -> Available [ok] Available: Room B-204 is free from 11:00 to 12:00.
+PASS T8 booking data unchanged after checks -> Algorithms seminar | 10:00-11:00 | Club meeting | 13:00-14:30
+PASS responsive: no horizontal scroll at 1100px 
+PASS responsive: no horizontal scroll at 375px 
+PASS security: markup in input is not executed/rendered 
+PASS no console/page errors (incl. CSP violations) 
+code-based UI checks: 12 / 12

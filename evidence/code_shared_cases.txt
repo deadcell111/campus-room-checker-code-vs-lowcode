@@ -1,0 +1,9 @@
+PASS T1 valid free interval: expected true/ok, observed true/ok
+PASS T2 overlap with an existing booking: expected false/overlap, observed false/overlap
+PASS T3 blocked room: expected false/blocked, observed false/blocked
+PASS T4 duration = 0: expected false/invalid_duration, observed false/invalid_duration
+PASS T5 duration = 121: expected false/invalid_duration, observed false/invalid_duration
+PASS T6 past start time: expected false/invalid_past, observed false/invalid_past
+PASS T7 adjacent non-overlapping interval: expected true/ok, observed true/ok
+PASS T8 booking data unchanged after checks: expected bookings identical, observed bookings identical
+code-based shared cases: 8/8
