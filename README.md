@@ -9,5 +9,10 @@ Talgat Kozhakhmetov, 24B031852. Same user story, same AC1-AC6, same tests T1-T8 
 - `docs/02..05` test table, comparison matrix + recommendation, security checklist, AI-use reflection
 - `shots/`, `evidence/` screenshots and raw logs
 
-Status: both builds pass 8/8. Not yet done: Appsmith published/public demo link and JSON export, GitHub publication.
-Labels: low-code runs were done in the Appsmith editor, not the published view.
+## Live demos
+- Code-based: https://deadcell111.github.io/campus-room-checker-code-vs-lowcode/code-based/index.html
+- Low-code (Appsmith, published, "Make application public" on): https://app.appsmith.com/app/my-first-application/page1-6b055da9328a2e186a87b579
+- Repo: https://github.com/deadcell111/campus-room-checker-code-vs-lowcode
+
+Status: both builds pass 8/8.
+Labels: T1-T8 on Appsmith were run in the editor canvas; after publishing, only T2 was re-run in the published view (shots/lowcode_published_view_T2.jpg). Not done: Appsmith JSON export, Git sync, logged-out check of the public link.
